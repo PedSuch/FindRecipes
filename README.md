@@ -27,8 +27,10 @@ Group Project - README Template
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
+#### REQUIRED (10pts)
+- [x] Enter about 20 food items ( Items are saved )
+- [x] View that generates a few meals to cook
 
-* - [x]Enter about 20 food items  ( saves them )
 * -[x]View that generates a few meals to cook
 * -[]Create account, Sign in
 * -[]View to search for a recipe
