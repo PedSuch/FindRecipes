@@ -1,6 +1,3 @@
-Group Project - README Template
-===
-
 # Pantry Genius (Meal helper)
 
 ## Table of Contents
@@ -24,26 +21,27 @@ Group Project - README Template
 
 ## Product Spec
 
+### Milestone 1 Walkthrough GIF
+<img src="http://g.recordit.co/CtDCFoCAlO.gif" width=250><br>
+
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 #### REQUIRED (10pts)
 - [x] Enter about 20 food items ( Items are saved )
 - [x] View that generates a few meals to cook
-
-* -[x]View that generates a few meals to cook
-* -[]Create account, Sign in
-* -[]View to search for a recipe
-* -[]Collection view of other user recipes
-* -[]Settings -> create a profile
+- [] Create account, Sign in
+- [] View to search for a recipe
+- [] Collection view of other user recipes
+- [] Settings -> create a profile
+- [] 
 
 **Optional Nice-to-have Stories**
-
-* -[] Users can submit their own recipes
-* -[]Dark vs light mode
-* -[]Leave comments on others recipes
-* -[]Downvote or upvote recipes
-* -[]User can favorite recipes they like
+- [] Users can submit their own recipes
+- [] Dark vs Light mode
+- [] Leave comments on others recipes
+- [] Downvote or upvote recipes
+- [] User can favorite recipes they like
 
 ### 2. Screen Archetypes
 
@@ -125,6 +123,8 @@ Object 3 : User
 
 
 
+
+
 ### Networking
 - Home Feed (Input Ingredients)
     - (Read/GET) Query all ingredients for specific user
@@ -154,6 +154,4 @@ ignorePantry (optional) | Whether to ignore pantry ingredients such as water, sa
 
 
     - URL to GET request documentation: https://rapidapi.com/spoonacular/api/recipe-food-nutrition?endpoint=55e1b3e1e4b0b74f06703be6
-    
-### Milestone 1 Walkthrough GIF
-<img src="http://g.recordit.co/CtDCFoCAlO.gif" width=250><br>
+ 
