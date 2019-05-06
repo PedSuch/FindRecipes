@@ -28,7 +28,7 @@ Group Project - README Template
 
 **Required Must-have Stories**
 
-* -[x]Enter about 20 food items  ( saves them )
+* - [x]Enter about 20 food items  ( saves them )
 * -[x]View that generates a few meals to cook
 * -[]Create account, Sign in
 * -[]View to search for a recipe
