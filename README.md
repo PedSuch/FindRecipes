@@ -1,6 +1,4 @@
-# FindRecipes
 Group Project - README Template
-lmaoooo
 ===
 
 # Pantry Genius (Meal helper)
@@ -30,20 +28,20 @@ lmaoooo
 
 **Required Must-have Stories**
 
-* Enter about 20 food items  ( saves them )
-* View that generates a few meals to cook
-* Create account, Sign in
-* View to search for a recipe
-* Collection view of other user recipes
-* Settings -> create a profile
+* -[x]Enter about 20 food items  ( saves them )
+* -[x]View that generates a few meals to cook
+* -[]Create account, Sign in
+* -[]View to search for a recipe
+* -[]Collection view of other user recipes
+* -[]Settings -> create a profile
 
 **Optional Nice-to-have Stories**
 
-* Users can submit their own recipes
-* Dark vs light mode
-* Leave comments on others recipes
-* Downvote or upvote recipes
-* User can favorite recipes they like
+* -[] Users can submit their own recipes
+* -[]Dark vs light mode
+* -[]Leave comments on others recipes
+* -[]Downvote or upvote recipes
+* -[]User can favorite recipes they like
 
 ### 2. Screen Archetypes
 
@@ -82,10 +80,78 @@ lmaoooo
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+
 ### Models
-[Add table of models]
+ViewContoller 1: Input Ingredients 
+Object 1 : Ingredients 
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| nameOfItem     | String     |  ex. chicken  |
+| priority     | number     |  user ranks meals that contain the ingreidents in an order specified by this number  |
+
+
+ViewContoller 2: View all Meals 
+Object 2 : Meals
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| mealPicture     | String     |   link that will be formatted into an image   |
+| data | array | store the package of information so when the user clicks the image, the details of the meal come up
+
+
+ViewContoller 3: View specific meal
+Object 3 : Recipes 
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| foodImage     | String   | URL to image of the food item| 
+| Ingredients    | Array     | List of ingredients for respective recipe.         |
+| Instructions     | String     | Chronological list of steps for cooking item.     |
+| Time     | Number     | Time necessary to complete recipe.      |
+| Likes     | Number     | Popularity of respective recipe      |
+| Equipment     | String     | List of items necessary to cook the recipe.   |
+| Nutritional Info     | Array     | Provide users with nutrional information on the recipe including serving sizes.     |
+
+
+ViewContoller 4: User log in / sign up page
+Object 3 : User
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| username     | String     |   unique user ID  |
+| password | String | unique string |
+| savedRecipes | Array | link to recipe info |
+| ingredientsInHouse | Array | saves their ingredients in their pantry |
+
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Home Feed (Input Ingredients)
+    - (Read/GET) Query all ingredients for specific user
+
+- Sign In/ Sign Up Screen
+    - (Create/POST) User creates an account
+    - (Read/GET) Query User logged in
+    - (Update/PUT) User updates profile image
+        
+- Profile Screen
+    - (Read/Get) Fetch user's saved recipes 
+
+### Spoonacular API
+    - Base Url: https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/
+
+| Property | Type     | 
+| -------- | -------- | 
+| GET (required params) | findByIngredients?ingredients=apples%2Cflour%2Csugar 
+| GET (optional params)| findByIngredients?number=5&ranking=1&ignorePantry=false&ingredients=apples%2Cflour%2Csugar 
+
+| Sub-Property | Description     | 
+| -------- | -------- |
+ingredients (required)| A comma-separated list of ingredients that the recipes should contain.
+number (optional) | The maximal number of recipes to return (default = 5)
+ranking (optional)  |  Whether to maximize used ingredients (1) or minimize missing ingredients (2) first.
+ignorePantry (optional) | Whether to ignore pantry ingredients such as water, salt, flour etc..
+
+
+    - URL to GET request documentation: https://rapidapi.com/spoonacular/api/recipe-food-nutrition?endpoint=55e1b3e1e4b0b74f06703be6
+    
+### Milestone 1 Walkthrough GIF
+<img src="http://g.recordit.co/W1Oj2zNc9n.gif" width=250><br>
