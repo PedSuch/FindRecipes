@@ -154,4 +154,4 @@ ignorePantry (optional) | Whether to ignore pantry ingredients such as water, sa
     - URL to GET request documentation: https://rapidapi.com/spoonacular/api/recipe-food-nutrition?endpoint=55e1b3e1e4b0b74f06703be6
     
 ### Milestone 1 Walkthrough GIF
-<img src="http://g.recordit.co/W1Oj2zNc9n.gif" width=250><br>
+<img src="http://g.recordit.co/CtDCFoCAlO.gif" width=250><br>
